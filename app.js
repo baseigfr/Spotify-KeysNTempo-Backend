@@ -15,6 +15,7 @@ require('dotenv').config()
 const app = express();
 const cors = require('cors')
 const mongoose = require('mongoose')
+const PORT = process.env.PORT
 // const bodyParser = require('body-parser')
 
 app.use(express.json())
@@ -178,4 +179,4 @@ const tracksController = require('./controllers/tracks.js')
 app.use('/tracks', tracksController)
 
 console.log('Listening on 8888');
-app.listen(8888);
+app.listen(PORT);
