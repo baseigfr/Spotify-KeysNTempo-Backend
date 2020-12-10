@@ -1,0 +1,45 @@
+
+body {
+    background-color: #0f0f0f;
+}
+.container {
+   
+    margin-top: 25%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  
+  }
+
+
+button:hover {
+    background-color: #1DB954;
+    color: #252525;
+    border: 2px solid #252525;
+    transform: perspective(1px) translateZ(0);
+      box-shadow: 4 4 4px rgba(0, 0, 0, 0);
+      overflow: hidden;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.6s;
+      -webkit-transition-property: color, background-color;
+      transition-property: color, background-color;
+      
+  }
+ 
+  button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 2px solid #1DB954;
+    color: #1DB954;
+    font-size: 60px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    outline:none;
+    border-radius: 3px;
+    text-transform: uppercase;
+   
+  }
