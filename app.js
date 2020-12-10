@@ -27,16 +27,7 @@ const mongodbURI = process.env.MONGODBURI
 const client_id = process.env.CLIENT_ID; // Your client id
 const client_secret = process.env.CLIENT_SECRET; // Your client secret
 const redirect_uri = process.env.REDIRECT_URI; // Or Your redirect uri
-// const whitelist = ['http://localhost:3000/', 'http://localhost:8888/', 'https://api.spotify.com/', 'https://accounts.spotify.com/']
-// const corsOptions = {
-//   origin: (origin, callback) => {
-//     if (whitelist.indexOf(origin) !== -1) {
-//       callback(null, true)
-//     } else {
-//       callback(new Error('Not allowed by CORS'))
-//     }
-//   },
-// }
+
 
 app.use(cors())
 
@@ -127,7 +118,7 @@ app.get('/callback', function(req, res) {
         });
 
         // we can also pass the token to the browser to make requests from there
-        res.redirect('http://localhost:3000/#' +
+        res.redirect('https://spotify-keysntempo-frontend.herokuapp.com/#' +
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
